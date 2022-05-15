@@ -60,6 +60,7 @@ let operator = '';
 //This sets all our variable
 let btnoutput = document.getElementById('btnoutput');
 let txtoutput = document.getElementById('txtouput');
+let btnrefresh = document.getElementById('btnrefresh');
 let operatorCalc = document.querySelectorAll('.operatorCalc');
 let numbersBtn = document.querySelectorAll('.numbersBtn');
 
@@ -141,3 +142,9 @@ for (let i = 0; i < operatorCalc.length; i++) {
 
 // This display the result
 btnoutput.onclick = ouputEvent;
+
+// Refresh Page
+function btnrefreshPage() {
+  btnrefresh.onclick = window.location.reload();
+}
+btnrefresh.onclick = btnrefreshPage;
