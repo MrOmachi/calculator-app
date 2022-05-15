@@ -97,12 +97,13 @@ function selectNumber(value) {
 function bindBtnEvent(e) {
   let value = e.target.innerHTML;
   selectNumber(value);
-  e.target.classList.add('selected');
+  e.target.classList.add('selectedNumber');
 }
 
 // This is for setting the clicked operator
 function bindOperatorEvent(e) {
   operator = e.target.innerHTML;
+  e.target.classList.add('selectedOperatoe');
 }
 
 // This is for displaying the result to the output textor
