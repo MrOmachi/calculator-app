@@ -6,14 +6,19 @@ body {
 .numbers {
   display: flex;
 }
+h1 {
+  text-align: center;
+}
 
 .calculator {
   background-color: #ddd;
-  width: 295px;
+  width: 30%;
+  margin: auto;
 }
 
 #txtouput {
-  width: 100%;
+  width: 97%;
+  margin-left: 3px;
   border: 1px solid #ddd;
   padding: 20px 5px;
   box-sizing: border-box;
@@ -48,4 +53,16 @@ button {
   margin: 3px;
   font-size: 50px;
   cursor: pointer;
+}
+@media (max-width: 850px) {
+  .calculator {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media (max-width: 600px) {
+  .calculator {
+    width: 80%;
+    margin: auto;
+  }
 }
